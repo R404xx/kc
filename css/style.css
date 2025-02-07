@@ -1,0 +1,403 @@
+@font-face {
+    font-family: "NRT-Reg";
+    src: url("../fonts/NRT-Reg.eot"); /* IE9 Compat Modes */
+    src: url("../fonts/NRT-Reg.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+        url("../fonts/NRT-Reg.ttf") format("truetype"), /* Safari, Android, iOS */
+        url("../fonts/NRT-Reg.woff") format("woff"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+    }
+
+/* General Reset */
+* {
+    font-family: "NRT-Reg"; /* Apply globally */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure consistent box model */
+}
+body {
+    font-family: "NRT-Reg";
+    direction: rtl;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    background-color: #d7d7d7;
+    color: #333333;
+}
+
+/* Header Styling */
+header {
+
+    background: linear-gradient(rgba(5, 0, 70, 0.5), rgba(2, 0, 54, 0.5)),  url('../images/header.jpg');
+    font-family: "NRT-Reg";
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 15px;
+    display: flex;
+    justify-content: center; /* Center all items horizontally */
+    align-items: center; /* Center items vertically */
+    color: white;
+    position: relative;
+}
+
+/* For devices with a width of 768px or smaller */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Smaller font size for smaller screens */
+        padding: 10px;
+    }
+
+    .container {
+        width: 80%; /* Instead of a fixed pixel width */
+        max-width: 1200px; /* Limit the maximum width */
+        margin: 0 auto; /* Center align */
+    }
+
+    .navbar {
+        display: flex;
+        flex-wrap: wrap; /* Allow items to wrap to the next line */
+        justify-content: space-between;
+    }
+}
+
+
+/* Logo Styling */
+.container {
+    font-family: "NRT-Reg";
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    position: relative;
+    height: 100px;          
+    padding-left: 450px;
+}
+
+.logo {
+    max-height: 100px;      
+    margin-right: auto;     
+}
+
+/* Social Icons Styling */
+.social-icons {
+    display: flex;
+    justify-content: center; /* Align icons near the center */
+    gap: 15px;
+    text-align: center;      /* Center text alignment */
+    padding: 20px;
+    background-color: #0a192f;
+    margin: 20px auto;       /* Center the section itself */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+
+.social-icons h2 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: center; /* Center heading text */
+}
+
+.social-icons a {
+    color: #ffffff;
+    font-size: 24px;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.social-icons a:hover {
+    color: #1d4ed8; /* Modern hover color */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Navigation Styling */
+nav {
+    font-family: 'NRT-Reg';
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 10px 80px; 
+    background-color: #0a192f; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+   
+}
+
+/* Navigation List */
+nav ul {
+    font-family: 'NRT-Reg';
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px; /* Spacing between items */
+}
+
+/* Individual Navigation Items */
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    font-family: 'NRT-Reg';
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: transparent; /* Transparent background */
+    transition: all 0.3s ease; /* Smooth hover effect */
+    font-weight: 500;
+    text-transform: capitalize; /* Make text look cleaner */
+}
+
+/* Hover Effect */
+nav ul li a:hover {
+    background-color: #1d4ed8; /* Bright hover color */
+    color: white;
+    box-shadow: 0 4px 15px rgba(29, 78, 216, 0.5); /* Add glow */
+    transform: translateY(-2px); /* Subtle lift effect */
+}
+
+/* Active Link */
+nav ul li a.active {
+    background-color: #1d4ed8;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(29, 78, 216, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 15px; /* Adjust spacing for stacked items */
+    }
+}
+
+p {
+    font-family: 'NRT-Reg';
+    font-size: 16px;
+    line-height: 1.6; 
+    margin: 0; 
+    padding: 0; 
+}
+    
+    section {
+        font-family: "NRT-Reg";
+        padding: 20px;
+        background-color: #ffffff;
+        margin: 20px auto;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        max-width: 800px;
+    }
+    
+    section h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    
+    section p, section ul {
+        font-size: 16px;
+        line-height: 1.6;
+
+    }
+    
+    section ul {
+        padding-left: 20px;
+    }
+    
+    section ul li {
+        margin-bottom: 10px;
+    }
+    
+    footer {
+        background-color: #0a192f;
+        color: white;
+        text-align: center;
+        padding: 15px 10px;
+        margin-top: 20px;
+    }
+    
+    footer p {
+        margin: 0;
+    }
+    
+    .staff {
+        font-family: "NRT-Reg";
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+        gap: 20px; /* Add space between grid items */
+        margin-top: 20px;
+    }
+
+    .staff h2 {
+        grid-column: 1 / -1; /* Ensure h2 spans the full width of the grid */
+        text-align: right; /* Center-align the heading */
+        font-size: 24px;
+        margin-bottom: 30px; /* Add space below the heading */
+        color: #333; /* Optional: Adjust heading color */
+    }
+
+    .staff-member {
+        font-family: "NRT-Reg";
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+        background-color: #fff;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .staff-member img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    
+    .staff-member .staff-info {
+        font-size: 16px;
+    }
+    
+    @media (max-width: 768px) {
+        .staff {
+            grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .staff {
+            grid-template-columns: 1fr; /* 1 column on very small screens */
+        }
+    }
+    
+
+    .video-container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20;
+        gap: 3px;
+    }
+    
+    /* Individual Video Box */
+    .video {
+        width: 300px;
+        height: 200px;
+
+    }
+    
+    /* For 3 videos per row */
+    @media (min-width: 768px) {
+        .video {
+            width: 33%; /* 3 items per row */
+        }
+    }
+    
+    /* For 2 videos per row */
+    @media (max-width: 767px) {
+        .video {
+            width: 45%; /* 2 items per row */
+        }
+    }
+    
+    /* For 1 video per row on very small screens */
+    @media (max-width: 480px) {
+        .video {
+            width: 90%; /* 1 item per row */
+        }
+    }
+    
+    .rules ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .rules ul li {
+        margin-bottom: 10px;
+    }
+    
+    .rule-description {
+        font-family: "NRT-Reg";
+        display: none; /* Initially hidden */
+        background-color: #0a192f;
+        color: white;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        overflow: hidden; /* Hide content when sliding */
+    }
+    
+    .rule-description p {
+        font-family: "NRT-Reg";
+        margin: 0;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: right; /* Right-to-left alignment */
+    }
+    
+    .rules a {
+        font-family: 'NRT-Reg';
+        font-weight: bold;
+        color: #1d4ed8;
+        text-decoration: none;
+        font-size: 18px;
+        transition: color 0.3s ease;
+        cursor: pointer;
+    }
+    
+    .rules a:hover {
+        color: #001631;
+    }
+
+    /* Style for notes */
+.note {
+    font-family: "NRT-Reg";
+    margin-top: 10px;
+    background-color: #e7f3ff; /* Light blue background */
+    color: #084298; /* Dark blue text */
+    padding: 10px;
+    border-left: 5px solid #084298;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* bashy contact */
+/* Center the container */
+.discord-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none; /* Removes underline from the link */
+    padding: 20px; /* Optional padding around the link */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Style for the image */
+.discord-link img {
+    transition: all 0.3s ease; 
+    filter: grayscale(0); 
+    width: 400px; 
+    height: auto; 
+}
+
+
+/* On hover, apply grayscale (black & white) effect */
+.discord-link:hover img {
+    filter: grayscale(100%); /* Black & white effect */
+}
+
+/* Optional: Change text color on hover */
+.discord-link:hover {
+    color: #7289da; /* Discord blue color on hover */
+}
+
+/* Optional: Style the text */
+.discord-link img + span {
+    margin-left: 10px; /* Space between the image and text */
+}
